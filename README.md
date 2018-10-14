@@ -5,7 +5,7 @@ Sample usage of using the static method TrySeek:
 ```
 void Main()
 {
-    Budoom.GoalSeek.TrySeek(Calculate);
+    var goalSeekResult = Budoom.GoalSeek.TrySeek(Calculate);
 }
 
 decimal Calculate(decimal x)
@@ -21,7 +21,7 @@ void Main()
     var sc = new SomeCalculation();
 
     var goalSeek = new Budoom.GoalSeek(sc);
-    goalSeek.TrySeek();
+    var goalSeekResult = goalSeek.TrySeek();
 }
 
 public class SomeCalculation : Budoom.IGoalSeek
