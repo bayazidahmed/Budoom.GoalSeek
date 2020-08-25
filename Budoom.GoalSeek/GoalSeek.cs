@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -61,7 +61,7 @@ namespace Budoom
                 var newGuess = (guess + delta);
                 var result2 = (func(newGuess) - targetValue);
                 if ((result2 - result1) != 0)
-                    guess = guess - result1 * (newGuess - guess) / (result2 - result1);
+                    guess -= result1 * (newGuess - guess) / (result2 - result1);
                 else
                     break;
 
