@@ -1,4 +1,4 @@
-﻿namespace Budoom
+namespace Budoom
 {
     public interface IGoalSeek
     {
